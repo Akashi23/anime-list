@@ -1,13 +1,14 @@
 <template>
-    <v-card
+    <v-card 
       class="mx-auto"
-      max-width="300"
-      height="400px"
-    >
+      width="240"
+      height="500px"
+    > 
     <a :href="card.url">
-      <v-img 
+     <v-img
         :src="card.image_url"
-        height="200px"
+        height="300px"
+        contain
       ></v-img>
     </a>
 
@@ -43,7 +44,7 @@ export default {
 .card-footer{
   position: absolute;
   display: block;
-  top: 350px;
+  top: 450px;
   /*font*/
   color:gray;
   font-size: 16px;
